@@ -672,7 +672,7 @@ module Gruff
         @maximum_value = [@maximum_value.ceil, @y_axis_increment].max
         @minimum_value = @minimum_value.floor
         calculate_spread
-        normalize(true)
+        normalize()
 
         @marker_count = (@spread / @y_axis_increment).to_i
         @increment = @y_axis_increment
